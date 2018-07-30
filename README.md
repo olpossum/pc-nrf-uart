@@ -2,6 +2,6 @@
 
 ## Introduction
 
-### Dependencies
+## Dependencies
 
-#### Credits/Resources
+## Credits/Resources
