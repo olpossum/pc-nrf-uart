@@ -6,7 +6,7 @@
 * [pc-ble-driver-py](https://github.com/NordicSemiconductor/pc-ble-driver-py)
 * [Python](https://www.python.org/) (>= 2.7 && <= 3.0)
 
-###pc_ble_driver_py modification
+### pc_ble_driver_py modification
 In order for this code to work for me I had to modify ble_adapter.py slightly
 
 Running ble_adapter.py as distributed, I recieve the following AttributeError:
@@ -29,7 +29,7 @@ AttributeError: 'BLEUUID' object has no attribute 'baseitype'
 Modifying line 73 in ble_adapter.py from
 ```if (c.uuid.value == uuid.value) and (c.uuid.baseitype == uuid.base.type):```
 to
-```if (c.uuid.value == uuid.value):``
+```if (c.uuid.value == uuid.value):```
 results in successful execution for me.
 
 ## Credits/Resources
